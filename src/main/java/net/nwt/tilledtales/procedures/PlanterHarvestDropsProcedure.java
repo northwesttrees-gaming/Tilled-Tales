@@ -7,8 +7,6 @@ import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.item.ItemEntity;
-import net.minecraft.util.RandomSource;
-import net.minecraft.util.Mth;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.core.BlockPos;
 
@@ -28,34 +26,38 @@ public class PlanterHarvestDropsProcedure {
 		double seedDropMax = 0;
 		double cropDropMin = 0;
 		double cropDropMax = 0;
+		double cropTotal = 0;
+		double seedTotal = 0;
 		block = blockstate;
 		cropDrop = cropLoot.copy();
 		seedDrop = seedLoot.copy();
-		seedDropMin = getBlockNBTNumber(world, BlockPos.containing(blockX, blockY, blockZ), "seedDropMin");
-		seedDropMax = getBlockNBTNumber(world, BlockPos.containing(blockX, blockY, blockZ), "seedDropMax");
-		seedAmount = Mth.nextInt(RandomSource.create(), (int) seedDropMin, (int) seedDropMax);
+		cropAmount = getBlockNBTNumber(world, BlockPos.containing(blockX, blockY, blockZ), "cropDropAmount");
 		cropDropMin = getBlockNBTNumber(world, BlockPos.containing(blockX, blockY, blockZ), "cropDropMin");
 		cropDropMax = getBlockNBTNumber(world, BlockPos.containing(blockX, blockY, blockZ), "cropDropMax");
-		cropAmount = Mth.nextInt(RandomSource.create(), (int) cropDropMin, (int) cropDropMax);
+		seedAmount = getBlockNBTNumber(world, BlockPos.containing(blockX, blockY, blockZ), "seedDropAmount");
+		seedDropMin = getBlockNBTNumber(world, BlockPos.containing(blockX, blockY, blockZ), "seedDropMin");
+		seedDropMax = getBlockNBTNumber(world, BlockPos.containing(blockX, blockY, blockZ), "seedDropMax");
 		dropX = Math.floor(blockX) + 0.5;
 		dropY = Math.floor(blockY) + 0.5;
 		dropZ = Math.floor(blockZ) + 0.5;
+		cropTotal = cropAmount;
+		seedTotal = seedAmount;
 		if (block.getBlock().getStateDefinition().getProperty("fertilizer") instanceof BooleanProperty _getbp7 && block.getValue(_getbp7)) {
 			fertilizerType = getBlockNBTString(world, BlockPos.containing(blockX, blockY, blockZ), "fertilizerType");
 			if ((fertilizerType).equals("Basic")) {
-				cropAmount = Math.max(cropAmount * 2, 1);
-				seedAmount = Math.max(seedAmount * 2, 1);
+				cropTotal = Math.max(cropTotal * 2, 1);
+				seedTotal = Math.max(seedTotal * 2, 1);
 			} else if ((fertilizerType).equals("Premium")) {
-				cropAmount = Math.max(cropAmount * 3, 1);
-				seedAmount = Math.max(seedAmount * 3, 1);
+				cropTotal = Math.max(cropTotal * 4, 1);
+				seedTotal = Math.max(seedTotal * 4, 1);
 			}
 		}
 		if (block.getBlock().getStateDefinition().getProperty("weeds") instanceof BooleanProperty _getbp9 && block.getValue(_getbp9)) {
-			cropAmount = Math.max(cropAmount / 2, 1);
-			seedAmount = Math.max(seedAmount / 2, 1);
+			cropTotal = cropTotal - Math.max(cropAmount / 2, 1);
+			seedTotal = seedTotal - Math.max(seedAmount / 2, 1);
 		}
-		cropAmount = Math.max(cropDropMin, Math.min(cropAmount, cropDropMax));
-		seedAmount = Math.max(seedDropMin, Math.min(seedAmount, seedDropMax));
+		cropTotal = Math.min(cropDropMax, Math.max(cropTotal, cropDropMin));
+		seedTotal = Math.min(seedDropMax, Math.max(seedTotal, seedDropMin));
 		cropDrop.setCount((int) cropAmount);
 		seedDrop.setCount((int) seedAmount);
 		if (world instanceof ServerLevel _level) {

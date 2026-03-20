@@ -1329,11 +1329,19 @@
             "type": "number"
           },
           {
+            "name": "cropDropAmount",
+            "type": "number"
+          },
+          {
             "name": "cropDropMax",
             "type": "number"
           },
           {
             "name": "cropDropMin",
+            "type": "number"
+          },
+          {
+            "name": "seedDropAmount",
             "type": "number"
           },
           {

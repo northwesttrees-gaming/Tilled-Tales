@@ -35,10 +35,10 @@ public class PlanterPlantProcedure {
 		bZ = blockZ;
 		mainHand = (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).copy();
 		if (mainHand.is(ItemTags.create(ResourceLocation.parse("tilled_tales:seeds/wheat")))) {
-			PlanterPlantAddProcedure.execute(world, bX, bY, bZ, 12, 6, 4, 2, "wheat");
+			PlanterPlantAddProcedure.execute(world, bX, bY, bZ, 2, 8, 2, 1, 4, 1, "wheat");
 			runScript = true;
 		} else if (mainHand.is(ItemTags.create(ResourceLocation.parse("tilled_tales:seeds/blueberries")))) {
-			PlanterPlantAddProcedure.execute(world, bX, bY, bZ, 8, 4, 8, 4, "blueberry");
+			PlanterPlantAddProcedure.execute(world, bX, bY, bZ, 4, 16, 4, 2, 8, 2, "blueberry");
 			runScript = true;
 		}
 		if (runScript) {

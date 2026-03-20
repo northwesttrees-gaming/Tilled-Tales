@@ -8,7 +8,7 @@ import net.minecraft.world.level.Level;
 import net.minecraft.core.BlockPos;
 
 public class PlanterPlantAddProcedure {
-	public static void execute(LevelAccessor world, double blockX, double blockY, double blockZ, double cropDropMax, double cropDropMin, double seedDropMax, double seedDropMin, String cropProperty) {
+	public static void execute(LevelAccessor world, double blockX, double blockY, double blockZ, double cropDropAmount, double cropDropMax, double cropDropMin, double seedDropAmount, double seedDropMax, double seedDropMin, String cropProperty) {
 		if (cropProperty == null)
 			return;
 		double bX = 0;
@@ -22,8 +22,10 @@ public class PlanterPlantAddProcedure {
 			BlockEntity _blockEntity = world.getBlockEntity(_bp);
 			BlockState _bs = world.getBlockState(_bp);
 			if (_blockEntity != null) {
+				_blockEntity.getPersistentData().putDouble("cropDropAmount", cropDropAmount);
 				_blockEntity.getPersistentData().putDouble("cropDropMin", cropDropMin);
 				_blockEntity.getPersistentData().putDouble("cropDropMax", cropDropMax);
+				_blockEntity.getPersistentData().putDouble("seedDropAmount", seedDropAmount);
 				_blockEntity.getPersistentData().putDouble("seedDropMin", seedDropMin);
 				_blockEntity.getPersistentData().putDouble("seedDropMax", seedDropMax);
 			}
