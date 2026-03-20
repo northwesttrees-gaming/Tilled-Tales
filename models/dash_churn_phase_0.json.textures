@@ -1,0 +1,12 @@
+{
+  "mappings": {
+    "default": {
+      "name": "default",
+      "map": {
+        "wood": "minecraft:oak_log",
+        "bars": "dash_churn_bars",
+        "planks": "minecraft:oak_planks"
+      }
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "replace": false,
+  "values": [
+    "tilled_tales:millstone_8",
+    "tilled_tales:millstone_9",
+    {
+      "id": "#tilled_tales:planters/wooden",
+      "required": false
+    },
+    "tilled_tales:oak_dash_churn_up",
+    "tilled_tales:millstone_1",
+    "tilled_tales:oak_dash_churn",
+    "tilled_tales:millstone_2",
+    "tilled_tales:millstone_3",
+    "tilled_tales:millstone_4",
+    "tilled_tales:millstone_5",
+    "tilled_tales:millstone_6",
+    "tilled_tales:millstone_7",
+    "tilled_tales:counter",
+    "tilled_tales:oak_ice_box_2",
+    "tilled_tales:millstone",
+    "tilled_tales:oak_ice_box_1",
+    "tilled_tales:oak_ice_box"
+  ]
+}

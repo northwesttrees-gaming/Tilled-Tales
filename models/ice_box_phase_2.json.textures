@@ -1,0 +1,12 @@
+{
+  "mappings": {
+    "default": {
+      "name": "default",
+      "map": {
+        "bark": "minecraft:oak_log",
+        "ice": "minecraft:ice",
+        "planks": "minecraft:oak_planks"
+      }
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "#tilled_tales:planters/diamond",
+      "required": false
+    },
+    {
+      "id": "#tilled_tales:planters/golden",
+      "required": false
+    }
+  ]
+}

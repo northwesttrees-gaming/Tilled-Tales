@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "tilled_tales:block/millstone_6"
+    },
+    "facing=east": {
+      "model": "tilled_tales:block/millstone_6",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "tilled_tales:block/millstone_6",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "tilled_tales:block/millstone_6",
+      "y": 270
+    }
+  }
+}

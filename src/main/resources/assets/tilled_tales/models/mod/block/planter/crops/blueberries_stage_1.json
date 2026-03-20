@@ -1,0 +1,7 @@
+{
+	"format_version": "1.9.0",
+	"parent": "tilled_tales:mod/block/templates/planter_cross_crop",
+	"textures": {
+		"cross_crop": "tilled_tales:block/planter_blueberry_age_1"
+	}
+}

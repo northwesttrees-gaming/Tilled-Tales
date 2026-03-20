@@ -1,0 +1,9 @@
+{
+	"format_version": "1.9.0",
+	"parent": "tilled_tales:mod/block/templates/planter_box",
+	"textures": {
+		"particle": "tilled_tales:block/planter_box_wooden_bottom",
+		"box_bottom": "tilled_tales:block/planter_box_wooden_bottom",
+		"box_side": "tilled_tales:block/planter_box_wooden_side"
+	}
+}

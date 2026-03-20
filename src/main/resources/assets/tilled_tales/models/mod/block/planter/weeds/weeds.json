@@ -1,0 +1,7 @@
+{
+	"format_version": "1.9.0",
+	"parent": "tilled_tales:mod/block/templates/planter_weeds",
+	"textures": {
+		"weeds": "tilled_tales:block/planter_weeds"
+	}
+}

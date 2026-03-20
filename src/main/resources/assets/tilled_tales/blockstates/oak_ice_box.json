@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "tilled_tales:block/oak_ice_box"
+    },
+    "facing=east": {
+      "model": "tilled_tales:block/oak_ice_box",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "tilled_tales:block/oak_ice_box",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "tilled_tales:block/oak_ice_box",
+      "y": 270
+    }
+  }
+}

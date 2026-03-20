@@ -1,0 +1,12 @@
+{
+  "mappings": {
+    "default": {
+      "name": "default",
+      "map": {
+        "top": "minecraft:calcite",
+        "handel": "minecraft:stone",
+        "base": "minecraft:stripped_oak_log"
+      }
+    }
+  }
+}

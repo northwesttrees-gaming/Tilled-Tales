@@ -1,0 +1,16 @@
+{
+	"format_version": "1.9.0",
+	"parent": "tilled_tales:mod/block/templates/planter_display",
+	"render_type": "cutout",
+	"elements": [
+		{
+			"name": "quicklime",
+			"from": [1, 6.25, 1],
+			"to": [15, 6.25, 15],
+			"rotation": {"angle": 0, "axis": "y", "origin": [0, 4, 0]},
+			"faces": {
+				"up": {"uv": [1, 1, 15, 15], "texture": "#quicklime"}
+			}
+		}
+	]
+}

@@ -1,0 +1,146 @@
+{
+	"multipart": [
+		{
+			"apply": { "model": "tilled_tales:mod/block/planter/box/diamond" },
+			"when": { "facing": "north" }
+		},
+		{
+			"apply": { "model": "tilled_tales:mod/block/planter/box/diamond", "y": 90 },
+			"when": { "facing": "east" }
+		},
+		{
+			"apply": { "model": "tilled_tales:mod/block/planter/box/diamond", "y": 180 },
+			"when": { "facing": "south" }
+		},
+		{
+			"apply": { "model": "tilled_tales:mod/block/planter/box/diamond", "y": 270 },
+			"when": { "facing": "west" }
+		},
+		{
+			"apply": { "model": "tilled_tales:mod/block/planter/soil/dry" },
+			"when": { "soil": "dry" }
+		},
+		{
+			"apply": { "model": "tilled_tales:mod/block/planter/soil/wet" },
+			"when": { "soil": "wet" }
+		},
+		{
+			"apply": { "model": "tilled_tales:mod/block/planter/fertilizer/fertilizer" },
+			"when": { "fertilizer": true }
+		},
+		{
+			"apply": { "model": "tilled_tales:mod/block/planter/quicklime/quicklime" },
+			"when": { "quicklime": true }
+		},
+		{
+			"apply": { "model": "tilled_tales:mod/block/planter/weeds/weeds" },
+			"when": { "weeds": true }
+		},
+		{
+			"apply": { "model": "tilled_tales:mod/block/planter/crops/wheat_stage_0" },
+			"when": {
+				"OR": [
+					{
+						"crop": "wheat",
+						"age": 0
+					},
+					{
+						"crop": "wheat",
+						"age": 1
+					},
+					{
+						"crop": "wheat",
+						"age": 2
+					}
+				]
+			}
+		},
+		{
+			"apply": { "model": "tilled_tales:mod/block/planter/crops/wheat_stage_1" },
+			"when": {
+				"OR": [
+					{
+						"crop": "wheat",
+						"age": 3
+					},
+					{
+						"crop": "wheat",
+						"age": 4
+					}
+				]
+			}
+		},
+		{
+			"apply": { "model": "tilled_tales:mod/block/planter/crops/wheat_stage_2" },
+			"when": {
+				"OR": [
+					{
+						"crop": "wheat",
+						"age": 5
+					},
+					{
+						"crop": "wheat",
+						"age": 6
+					}
+				]
+			}
+		},
+		{
+			"apply": { "model": "tilled_tales:mod/block/planter/crops/wheat_stage_3" },
+			"when": { "crop": "wheat", "age": 7 }
+		},
+		{
+			"apply": { "model": "tilled_tales:mod/block/planter/crops/blueberries_stage_0" },
+			"when": {
+				"OR": [
+					{
+						"crop": "blueberry",
+						"age": 0
+					},
+					{
+						"crop": "blueberry",
+						"age": 1
+					},
+					{
+						"crop": "blueberry",
+						"age": 2
+					}
+				]
+			}
+		},
+		{
+			"apply": { "model": "tilled_tales:mod/block/planter/crops/blueberries_stage_1" },
+			"when": {
+				"OR": [
+					{
+						"crop": "blueberry",
+						"age": 3
+					},
+					{
+						"crop": "blueberry",
+						"age": 4
+					}
+				]
+			}
+		},
+		{
+			"apply": { "model": "tilled_tales:mod/block/planter/crops/blueberries_stage_2" },
+			"when": {
+				"OR": [
+					{
+						"crop": "blueberry",
+						"age": 5
+					},
+					{
+						"crop": "blueberry",
+						"age": 6
+					}
+				]
+			}
+		},
+		{
+			"apply": { "model": "tilled_tales:mod/block/planter/crops/blueberries_stage_3" },
+			"when": { "crop": "blueberry", "age": 7 }
+		}
+	]
+}

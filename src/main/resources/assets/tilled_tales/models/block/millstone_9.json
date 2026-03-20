@@ -1,0 +1,12 @@
+{
+  "parent": "tilled_tales:custom/millstone_phase_9",
+  "textures": {
+    "all": "minecraft:block/oak_planks",
+    "particle": "minecraft:block/oak_planks",
+    "sack": "tilled_tales:block/burlapbag",
+    "wood": "minecraft:block/oak_log",
+    "planks": "minecraft:block/oak_planks",
+    "stone": "minecraft:block/stone"
+  },
+  "render_type": "cutout"
+}

@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "tilled_tales:block/pink_mixing_bowl"
+    },
+    "facing=east": {
+      "model": "tilled_tales:block/pink_mixing_bowl",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "tilled_tales:block/pink_mixing_bowl",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "tilled_tales:block/pink_mixing_bowl",
+      "y": 270
+    }
+  }
+}

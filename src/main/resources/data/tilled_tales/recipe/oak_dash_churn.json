@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "dash_churn",
+  "category": "misc",
+  "pattern": [
+    "a",
+    "b",
+    "c"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:stick"
+    },
+    "b": {
+      "item": "minecraft:oak_slab"
+    },
+    "c": {
+      "item": "minecraft:barrel"
+    }
+  },
+  "result": {
+    "id": "tilled_tales:oak_dash_churn",
+    "count": 1
+  }
+}

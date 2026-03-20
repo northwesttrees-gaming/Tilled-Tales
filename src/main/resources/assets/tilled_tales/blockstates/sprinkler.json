@@ -1,0 +1,27 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "tilled_tales:block/sprinkler"
+    },
+    "facing=east": {
+      "model": "tilled_tales:block/sprinkler",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "tilled_tales:block/sprinkler",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "tilled_tales:block/sprinkler",
+      "y": 270
+    },
+    "facing=up": {
+      "model": "tilled_tales:block/sprinkler",
+      "x": 270
+    },
+    "facing=down": {
+      "model": "tilled_tales:block/sprinkler",
+      "x": 90
+    }
+  }
+}

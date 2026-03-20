@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "salt",
+  "category": "misc",
+  "pattern": [
+    "a"
+  ],
+  "key": {
+    "a": {
+      "tag": "tilled_tales:salt_block"
+    }
+  },
+  "result": {
+    "id": "tilled_tales:salt",
+    "count": 4
+  }
+}

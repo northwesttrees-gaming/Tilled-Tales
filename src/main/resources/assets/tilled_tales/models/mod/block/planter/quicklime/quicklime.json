@@ -1,0 +1,7 @@
+{
+	"format_version": "1.9.0",
+	"parent": "tilled_tales:mod/block/templates/planter_quicklime",
+	"textures": {
+		"quicklime": "tilled_tales:block/planter_quicklime"
+	}
+}

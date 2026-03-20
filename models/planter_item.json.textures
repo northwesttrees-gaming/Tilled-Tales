@@ -1,0 +1,12 @@
+{
+  "mappings": {
+    "default": {
+      "name": "default",
+      "map": {
+        "box_side": "planter_box_wooden_side",
+        "soil": "minecraft:farmland",
+        "box_bottom": "planter_box_wooden_bottom"
+      }
+    }
+  }
+}

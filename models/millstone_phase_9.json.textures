@@ -1,0 +1,13 @@
+{
+  "mappings": {
+    "default": {
+      "name": "default",
+      "map": {
+        "sack": "burlapbag",
+        "wood": "minecraft:oak_log",
+        "planks": "minecraft:oak_planks",
+        "stone": "minecraft:stone"
+      }
+    }
+  }
+}

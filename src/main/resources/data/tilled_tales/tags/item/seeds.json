@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "#tilled_tales:seeds/wheat",
+      "required": false
+    },
+    {
+      "id": "#tilled_tales:seeds/blueberries",
+      "required": false
+    }
+  ]
+}

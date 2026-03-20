@@ -1,0 +1,9 @@
+{
+  "parent": "tilled_tales:custom/sprinkler",
+  "textures": {
+    "all": "tilled_tales:block/sprinkler",
+    "particle": "tilled_tales:block/sprinkler",
+    "sprinkler": "tilled_tales:block/sprinkler"
+  },
+  "render_type": "cutout"
+}

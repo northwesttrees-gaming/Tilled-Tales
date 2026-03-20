@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "#tilled_tales:planters/iron",
+      "required": false
+    }
+  ]
+}

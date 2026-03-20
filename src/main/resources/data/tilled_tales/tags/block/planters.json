@@ -1,0 +1,25 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "#tilled_tales:planters/wooden",
+      "required": false
+    },
+    {
+      "id": "#tilled_tales:planters/diamond",
+      "required": false
+    },
+    {
+      "id": "#tilled_tales:planters/golden",
+      "required": false
+    },
+    {
+      "id": "#tilled_tales:planters/iron",
+      "required": false
+    },
+    {
+      "id": "#tilled_tales:planters/stone",
+      "required": false
+    }
+  ]
+}

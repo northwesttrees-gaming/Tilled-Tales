@@ -1,0 +1,11 @@
+{
+  "_fv": 79,
+  "_type": "tab",
+  "definition": {
+    "name": "Tilled Tales Items",
+    "icon": {
+      "value": "CUSTOM:ChurnedButter"
+    },
+    "showSearch": false
+  }
+}

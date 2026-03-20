@@ -1,0 +1,11 @@
+{
+  "parent": "tilled_tales:custom/ice_box_phase_2",
+  "textures": {
+    "all": "minecraft:block/oak_planks",
+    "particle": "minecraft:block/oak_planks",
+    "bark": "minecraft:block/oak_log",
+    "ice": "minecraft:block/ice",
+    "planks": "minecraft:block/oak_planks"
+  },
+  "render_type": "translucent"
+}

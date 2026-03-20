@@ -1,0 +1,11 @@
+{
+  "parent": "tilled_tales:custom/planter_item",
+  "textures": {
+    "all": "tilled_tales:block/planter_box_wooden_bottom",
+    "particle": "tilled_tales:block/planter_box_wooden_bottom",
+    "box_side": "tilled_tales:block/planter_box_wooden_side",
+    "soil": "minecraft:block/farmland",
+    "box_bottom": "tilled_tales:block/planter_box_wooden_bottom"
+  },
+  "render_type": "cutout"
+}

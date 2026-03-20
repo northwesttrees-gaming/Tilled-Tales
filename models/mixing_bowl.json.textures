@@ -1,0 +1,100 @@
+{
+  "mappings": {
+    "magenta": {
+      "name": "magenta",
+      "map": {
+        "glaze": "minecraft:magenta_glazed_terracotta"
+      }
+    },
+    "pink": {
+      "name": "pink",
+      "map": {
+        "glaze": "minecraft:pink_glazed_terracotta"
+      }
+    },
+    "green": {
+      "name": "green",
+      "map": {
+        "glaze": "minecraft:green_glazed_terracotta"
+      }
+    },
+    "light_gray": {
+      "name": "light_gray",
+      "map": {
+        "glaze": "minecraft:light_gray_glazed_terracotta"
+      }
+    },
+    "lime": {
+      "name": "lime",
+      "map": {
+        "glaze": "minecraft:lime_glazed_terracotta"
+      }
+    },
+    "black": {
+      "name": "black",
+      "map": {
+        "glaze": "minecraft:black_glazed_terracotta"
+      }
+    },
+    "yellow": {
+      "name": "yellow",
+      "map": {
+        "glaze": "minecraft:yellow_glazed_terracotta"
+      }
+    },
+    "light_blue": {
+      "name": "light_blue",
+      "map": {
+        "glaze": "minecraft:light_blue_glazed_terracotta"
+      }
+    },
+    "brown": {
+      "name": "brown",
+      "map": {
+        "glaze": "minecraft:brown_glazed_terracotta"
+      }
+    },
+    "cyan": {
+      "name": "cyan",
+      "map": {
+        "glaze": "minecraft:cyan_glazed_terracotta"
+      }
+    },
+    "red": {
+      "name": "red",
+      "map": {
+        "glaze": "minecraft:red_glazed_terracotta"
+      }
+    },
+    "orange": {
+      "name": "orange",
+      "map": {
+        "glaze": "minecraft:orange_glazed_terracotta"
+      }
+    },
+    "default": {
+      "name": "default",
+      "map": {
+        "glaze": "minecraft:white_glazed_terracotta"
+      }
+    },
+    "gray": {
+      "name": "gray",
+      "map": {
+        "glaze": "minecraft:gray_glazed_terracotta"
+      }
+    },
+    "blue": {
+      "name": "blue",
+      "map": {
+        "glaze": "minecraft:blue_glazed_terracotta"
+      }
+    },
+    "purple": {
+      "name": "purple",
+      "map": {
+        "glaze": "minecraft:purple_glazed_terracotta"
+      }
+    }
+  }
+}

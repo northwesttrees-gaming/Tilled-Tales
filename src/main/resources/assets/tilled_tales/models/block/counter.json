@@ -1,0 +1,11 @@
+{
+  "parent": "tilled_tales:custom/counter",
+  "textures": {
+    "all": "minecraft:block/stripped_oak_log",
+    "particle": "minecraft:block/stripped_oak_log",
+    "top": "minecraft:block/calcite",
+    "handel": "minecraft:block/stone",
+    "base": "minecraft:block/stripped_oak_log"
+  },
+  "render_type": "cutout"
+}

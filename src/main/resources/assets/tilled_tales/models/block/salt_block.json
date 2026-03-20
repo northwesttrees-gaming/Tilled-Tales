@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "tilled_tales:block/salt_block",
+    "up": "tilled_tales:block/salt_block",
+    "north": "tilled_tales:block/salt_block",
+    "east": "tilled_tales:block/salt_block",
+    "south": "tilled_tales:block/salt_block",
+    "west": "tilled_tales:block/salt_block",
+    "particle": "tilled_tales:block/salt_block"
+  },
+  "render_type": "solid"
+}

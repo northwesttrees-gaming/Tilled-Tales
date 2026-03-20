@@ -1,0 +1,9 @@
+{
+  "parent": "tilled_tales:custom/mixing_bowl",
+  "textures": {
+    "all": "minecraft:block/cyan_glazed_terracotta",
+    "particle": "minecraft:block/cyan_glazed_terracotta",
+    "glaze": "minecraft:block/cyan_glazed_terracotta"
+  },
+  "render_type": "cutout"
+}

@@ -1,0 +1,38 @@
+{
+  "replace": false,
+  "values": [
+    "tilled_tales:cyan_mixing_bowl",
+    "tilled_tales:brown_mixing_bowl",
+    "tilled_tales:green_mixing_bowl",
+    {
+      "id": "#tilled_tales:planters/diamond",
+      "required": false
+    },
+    "tilled_tales:purple_mixing_bowl",
+    "tilled_tales:light_gray_mixing_bowl",
+    {
+      "id": "#tilled_tales:planters/golden",
+      "required": false
+    },
+    "tilled_tales:sprinkler",
+    {
+      "id": "#tilled_tales:planters/stone",
+      "required": false
+    },
+    "tilled_tales:magenta_mixing_bowl",
+    "tilled_tales:blue_mixing_bowl",
+    "tilled_tales:red_mixing_bowl",
+    "tilled_tales:white_mixing_bowl",
+    "tilled_tales:orange_mixing_bowl",
+    "tilled_tales:black_mixing_bowl",
+    "tilled_tales:light_blue_mixing_bowl",
+    "tilled_tales:pink_mixing_bowl",
+    {
+      "id": "#tilled_tales:planters/iron",
+      "required": false
+    },
+    "tilled_tales:yellow_mixing_bowl",
+    "tilled_tales:gray_mixing_bowl",
+    "tilled_tales:lime_mixing_bowl"
+  ]
+}
