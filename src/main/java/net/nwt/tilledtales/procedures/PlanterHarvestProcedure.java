@@ -86,6 +86,7 @@ public class PlanterHarvestProcedure {
 					_blockEntity.getPersistentData().putDouble("seedDropMax", 0);
 					_blockEntity.getPersistentData().putDouble("cropDropMin", 0);
 					_blockEntity.getPersistentData().putDouble("cropDropMax", 0);
+					_blockEntity.getPersistentData().putBoolean("isWeeded", false);
 					_blockEntity.getPersistentData().putString("fertilizerType", "none");
 				}
 				if (world instanceof Level _level)

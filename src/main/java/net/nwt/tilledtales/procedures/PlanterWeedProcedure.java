@@ -2,6 +2,7 @@ package net.nwt.tilledtales.procedures;
 
 import net.minecraft.world.level.block.state.properties.BooleanProperty;
 import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.Items;
@@ -24,6 +25,16 @@ public class PlanterWeedProcedure {
 		bX = blockX;
 		bY = blockY;
 		bZ = blockZ;
+		if (!world.isClientSide()) {
+			BlockPos _bp = BlockPos.containing(bX, bY, bZ);
+			BlockEntity _blockEntity = world.getBlockEntity(_bp);
+			BlockState _bs = world.getBlockState(_bp);
+			if (_blockEntity != null) {
+				_blockEntity.getPersistentData().putBoolean("isWeeded", true);
+			}
+			if (world instanceof Level _level)
+				_level.sendBlockUpdated(_bp, _bs, _bs, 3);
+		}
 		{
 			BlockPos _pos = BlockPos.containing(bX, bY, bZ);
 			BlockState _bs = world.getBlockState(_pos);

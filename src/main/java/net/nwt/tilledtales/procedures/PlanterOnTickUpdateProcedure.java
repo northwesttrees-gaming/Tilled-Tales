@@ -78,7 +78,7 @@ public class PlanterOnTickUpdateProcedure {
 					}
 				}
 			}
-			if (!weeds && age == 0) {
+			if (!getBlockNBTLogic(world, BlockPos.containing(x, y, z), "isWeeded") && !weeds && age == 0) {
 				{
 					BlockPos _pos = BlockPos.containing(x, y, z);
 					BlockState _bs = world.getBlockState(_pos);
@@ -110,5 +110,12 @@ public class PlanterOnTickUpdateProcedure {
 		if (blockEntity != null)
 			return blockEntity.getPersistentData().getDouble(tag);
 		return -1;
+	}
+
+	private static boolean getBlockNBTLogic(LevelAccessor world, BlockPos pos, String tag) {
+		BlockEntity blockEntity = world.getBlockEntity(pos);
+		if (blockEntity != null)
+			return blockEntity.getPersistentData().getBoolean(tag);
+		return false;
 	}
 }
