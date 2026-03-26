@@ -1085,41 +1085,11 @@
       "metadata": {
         "files": [
           "src/main/java/net/nwt/tilledtales/client/gui/MixingBowlScreen.java",
+          "src/main/java/net/nwt/tilledtales/network/MixingBowlSlotMessage.java",
           "src/main/java/net/nwt/tilledtales/world/inventory/MixingBowlMenu.java"
         ]
       },
       "path": "~/Blocks/Crafting/MixingBowl/Gui"
-    },
-    {
-      "name": "PieCrustMixingBowl",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "pie_crust_mixing_bowl",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ],
-        "files": [
-          "src/main/java/net/nwt/tilledtales/procedures/PieCrustMixingBowlProcedure.java"
-        ]
-      },
-      "path": "~/Blocks/Crafting/MixingBowl/Recipes"
     },
     {
       "name": "MixingBowlWhileThisGUIIsOpenTick",
@@ -1128,24 +1098,7 @@
       "locked_code": false,
       "registry_name": "mixing_bowl_while_this_gui_is_open_tick",
       "metadata": {
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ],
+        "dependencies": [],
         "files": [
           "src/main/java/net/nwt/tilledtales/procedures/MixingBowlWhileThisGUIIsOpenTickProcedure.java"
         ]
@@ -2474,6 +2427,68 @@
         "files": []
       },
       "path": "~/Creative Tabs"
+    },
+    {
+      "name": "MixingBowlItemTaken",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mixing_bowl_item_taken",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/nwt/tilledtales/procedures/MixingBowlItemTakenProcedure.java"
+        ]
+      },
+      "path": "~/Blocks/Crafting/MixingBowl/Recipes"
+    },
+    {
+      "name": "MixingBowlRecipes1",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mixing_bowl_recipes_1",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/nwt/tilledtales/procedures/MixingBowlRecipes1Procedure.java"
+        ]
+      },
+      "path": "~/Blocks/Crafting/MixingBowl/Recipes"
     }
   ],
   "variable_elements": [],

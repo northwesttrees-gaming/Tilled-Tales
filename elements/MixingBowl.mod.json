@@ -221,6 +221,9 @@
             "fixedValue": false
           },
           "dropItemsWhenNotBound": true,
+          "onTakenFromSlot": {
+            "name": "MixingBowlItemTaken"
+          },
           "x": 277,
           "y": 72,
           "locked": false
@@ -228,7 +231,7 @@
       }
     ],
     "onTick": {
-      "name": "MixingBowlWhileThisGUIIsOpenTick"
+      "name": "MixingBowlRecipes1"
     },
     "gridSettings": {
       "sx": 18,

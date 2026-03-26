@@ -1,8 +1,10 @@
 package net.nwt.tilledtales.world.inventory;
 
-import net.nwt.tilledtales.procedures.MixingBowlWhileThisGUIIsOpenTickProcedure;
+import net.nwt.tilledtales.procedures.MixingBowlRecipes1Procedure;
+import net.nwt.tilledtales.network.MixingBowlSlotMessage;
 import net.nwt.tilledtales.init.TilledTalesModMenus;
 
+import net.neoforged.neoforge.network.PacketDistributor;
 import net.neoforged.neoforge.items.wrapper.InvWrapper;
 import net.neoforged.neoforge.items.SlotItemHandler;
 import net.neoforged.neoforge.items.ItemStackHandler;
@@ -145,6 +147,12 @@ public class MixingBowlMenu extends AbstractContainerMenu implements TilledTales
 			private int y = MixingBowlMenu.this.y;
 
 			@Override
+			public void onTake(Player entity, ItemStack stack) {
+				super.onTake(entity, stack);
+				slotChanged(9, 1, stack.getCount());
+			}
+
+			@Override
 			public boolean mayPlace(ItemStack stack) {
 				return false;
 			}
@@ -282,6 +290,13 @@ public class MixingBowlMenu extends AbstractContainerMenu implements TilledTales
 		}
 	}
 
+	private void slotChanged(int slotid, int ctype, int meta) {
+		if (this.world != null && this.world.isClientSide()) {
+			PacketDistributor.sendToServer(new MixingBowlSlotMessage(slotid, x, y, z, ctype, meta));
+			MixingBowlSlotMessage.handleSlotAction(entity, slotid, ctype, meta, x, y, z);
+		}
+	}
+
 	@Override
 	public Map<Integer, Slot> getSlots() {
 		return Collections.unmodifiableMap(customSlots);
@@ -300,7 +315,7 @@ public class MixingBowlMenu extends AbstractContainerMenu implements TilledTales
 			double x = menu.x;
 			double y = menu.y;
 			double z = menu.z;
-			MixingBowlWhileThisGUIIsOpenTickProcedure.execute(world, x, y, z);
+			MixingBowlRecipes1Procedure.execute(world, x, y, z);
 		}
 	}
 }
