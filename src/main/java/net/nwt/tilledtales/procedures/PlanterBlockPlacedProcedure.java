@@ -45,6 +45,17 @@ public class PlanterBlockPlacedProcedure {
 						}
 					}
 				}
+			} else if ((material).equals("copper")) {
+				if (!world.isClientSide()) {
+					if (world instanceof Level _level) {
+						if (!_level.isClientSide()) {
+							_level.playSound(null, BlockPos.containing(Math.floor(x) + 0.5, Math.floor(y) + 0.5, Math.floor(z) + 0.5), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("block.copper.place")), SoundSource.BLOCKS, 1,
+									(float) 0.8);
+						} else {
+							_level.playLocalSound((Math.floor(x) + 0.5), (Math.floor(y) + 0.5), (Math.floor(z) + 0.5), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("block.copper.place")), SoundSource.BLOCKS, 1, (float) 0.8, false);
+						}
+					}
+				}
 			} else if ((material).equals("stone")) {
 				if (!world.isClientSide()) {
 					if (world instanceof Level _level) {

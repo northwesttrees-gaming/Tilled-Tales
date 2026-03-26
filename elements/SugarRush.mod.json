@@ -1,0 +1,49 @@
+{
+  "_fv": 79,
+  "_type": "potioneffect",
+  "definition": {
+    "effectName": "Sugar Rush",
+    "icon": "sugar_rush",
+    "color": {
+      "value": -2763297,
+      "falpha": 0.0
+    },
+    "particle": {
+      "value": "CUSTOM:SugarRushParticle"
+    },
+    "onAddedSound": {
+      "value": ""
+    },
+    "isInstant": false,
+    "mobEffectCategory": "BENEFICIAL",
+    "renderStatusInInventory": true,
+    "renderStatusInHUD": true,
+    "isCuredbyHoney": false,
+    "modifiers": [
+      {
+        "attribute": {
+          "value": "MOVEMENT_SPEED"
+        },
+        "amount": 0.03,
+        "operation": "ADD_VALUE"
+      },
+      {
+        "attribute": {
+          "value": "SWIM_SPEED"
+        },
+        "amount": 0.03,
+        "operation": "ADD_VALUE"
+      },
+      {
+        "attribute": {
+          "value": "FLYING_SPEED"
+        },
+        "amount": 0.03,
+        "operation": "ADD_VALUE"
+      }
+    ],
+    "onExpired": {
+      "name": "SugarRushEffectExpires"
+    }
+  }
+}

@@ -14,6 +14,10 @@
       "required": false
     },
     {
+      "id": "#tilled_tales:planter/copper",
+      "required": false
+    },
+    {
       "id": "#tilled_tales:planters/iron",
       "required": false
     },

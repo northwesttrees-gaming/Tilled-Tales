@@ -15,4 +15,6 @@ import net.minecraft.core.particles.ParticleType;
 public class TilledTalesModParticleTypes {
 	public static final DeferredRegister<ParticleType<?>> REGISTRY = DeferredRegister.create(Registries.PARTICLE_TYPE, TilledTalesMod.MODID);
 	public static final DeferredHolder<ParticleType<?>, SimpleParticleType> CHURNING_EFFECT = REGISTRY.register("churning_effect", () -> new SimpleParticleType(false));
+	public static final DeferredHolder<ParticleType<?>, SimpleParticleType> SUGAR_RUSH_PARTICLE = REGISTRY.register("sugar_rush_particle", () -> new SimpleParticleType(false));
+	public static final DeferredHolder<ParticleType<?>, SimpleParticleType> SUGAR_CRASH_PARTICLE = REGISTRY.register("sugar_crash_particle", () -> new SimpleParticleType(false));
 }

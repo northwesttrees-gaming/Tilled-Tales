@@ -13,7 +13,10 @@
     "rarity": "COMMON",
     "creativeTabs": [
       {
-        "value": "CUSTOM:TilledTalesItems"
+        "value": "CUSTOM:TilledTalesFood"
+      },
+      {
+        "value": "FOOD"
       }
     ],
     "stackSize": 64,

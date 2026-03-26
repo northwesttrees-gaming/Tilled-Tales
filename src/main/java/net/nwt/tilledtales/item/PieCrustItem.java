@@ -8,7 +8,6 @@ import net.neoforged.api.distmarker.Dist;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.network.chat.Component;
 import net.minecraft.client.Minecraft;
@@ -17,7 +16,7 @@ import java.util.List;
 
 public class PieCrustItem extends Item {
 	public PieCrustItem() {
-		super(new Item.Properties().food((new FoodProperties.Builder()).nutrition(1).saturationModifier(0.2f).build()));
+		super(new Item.Properties());
 	}
 
 	@Override

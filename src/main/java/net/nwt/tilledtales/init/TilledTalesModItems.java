@@ -69,8 +69,12 @@ public class TilledTalesModItems {
 	public static final DeferredItem<Item> GOLDEN_PLANTER_BLOCK;
 	public static final DeferredItem<Item> DIAMOND_PLANTER_BLOCK;
 	public static final DeferredItem<Item> BLUEBERRY_SEEDS;
-	public static final DeferredItem<Item> BLUE_BERRIES;
 	public static final DeferredItem<Item> STRAWBERRIES;
+	public static final DeferredItem<Item> COPPER_PLANTER_BLOCK;
+	public static final DeferredItem<Item> COPPER_PLANTER;
+	public static final DeferredItem<Item> STRAWBERRY_SEEDS;
+	public static final DeferredItem<Item> BLUEBERRY_PIE;
+	public static final DeferredItem<Item> BLUEBERRIES;
 	static {
 		OAK_DASH_CHURN = block(TilledTalesModBlocks.OAK_DASH_CHURN);
 		OAK_DASH_CHURN_UP = block(TilledTalesModBlocks.OAK_DASH_CHURN_UP);
@@ -125,8 +129,12 @@ public class TilledTalesModItems {
 		GOLDEN_PLANTER_BLOCK = block(TilledTalesModBlocks.GOLDEN_PLANTER_BLOCK);
 		DIAMOND_PLANTER_BLOCK = block(TilledTalesModBlocks.DIAMOND_PLANTER_BLOCK);
 		BLUEBERRY_SEEDS = REGISTRY.register("blueberry_seeds", BlueberrySeedsItem::new);
-		BLUE_BERRIES = REGISTRY.register("blue_berries", BlueBerriesItem::new);
 		STRAWBERRIES = REGISTRY.register("strawberries", StrawberriesItem::new);
+		COPPER_PLANTER_BLOCK = block(TilledTalesModBlocks.COPPER_PLANTER_BLOCK);
+		COPPER_PLANTER = REGISTRY.register("copper_planter", CopperPlanterItem::new);
+		STRAWBERRY_SEEDS = REGISTRY.register("strawberry_seeds", StrawberrySeedsItem::new);
+		BLUEBERRY_PIE = REGISTRY.register("blueberry_pie", BlueberryPieItem::new);
+		BLUEBERRIES = REGISTRY.register("blueberries", BlueberriesItem::new);
 	}
 
 	// Start of user code block custom items

@@ -4,6 +4,11 @@ import net.minecraft.network.chat.Component;
 
 public class PieCrustTooltipProcedure {
 	public static String execute() {
-		return "\u00A76" + Component.translatable("tooltip.tilled_tales.pie_crust_0").getString();
+		return (FormatTooltipTitleProcedure.execute() + "" + Component.translatable("tooltip.tilled_tales.title.description").getString() + "\n") + ""
+				+ (FormatTooltipDescriptionProcedure.execute() + "" + Component.translatable("tooltip.tilled_tales.description.pie_crust").getString() + "\n")
+				+ (FormatTooltipTitleProcedure.execute() + "" + Component.translatable("tooltip.tilled_tales.title.stats").getString() + "\n")
+				+ (FormatTooltipListProcedure.execute() + "" + FormatTooltipTextProcedure.execute() + Component.translatable("tooltip.tilled_tales.none").getString() + "\n")
+				+ (FormatTooltipTitleProcedure.execute() + "" + Component.translatable("tooltip.tilled_tales.title.effects").getString() + "\n")
+				+ (FormatTooltipListProcedure.execute() + "" + FormatTooltipTextProcedure.execute() + Component.translatable("tooltip.tilled_tales.none").getString());
 	}
 }

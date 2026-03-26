@@ -34,7 +34,7 @@ public class PlanterHarvestProcedure {
 			PlanterHarvestDropsProcedure.execute(world, blockstate, new ItemStack(TilledTalesModItems.WHEAT_GRAIN.get()), new ItemStack(TilledTalesModItems.WHEAT_GRAIN.get()), bX, bY, bZ);
 			runScript = true;
 		} else if ((crop).equals("BLUEBERRY")) {
-			PlanterHarvestDropsProcedure.execute(world, blockstate, new ItemStack(TilledTalesModItems.BLUE_BERRIES.get()), new ItemStack(TilledTalesModItems.BLUE_BERRIES.get()), bX, bY, bZ);
+			PlanterHarvestDropsProcedure.execute(world, blockstate, new ItemStack(TilledTalesModItems.BLUEBERRIES.get()), new ItemStack(TilledTalesModItems.BLUEBERRIES.get()), bX, bY, bZ);
 			runScript = true;
 		}
 		if (runScript) {

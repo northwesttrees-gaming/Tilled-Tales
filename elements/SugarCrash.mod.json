@@ -1,0 +1,46 @@
+{
+  "_fv": 79,
+  "_type": "potioneffect",
+  "definition": {
+    "effectName": "Sugar Crash",
+    "icon": "sugar_crash",
+    "color": {
+      "value": -2763297,
+      "falpha": 0.0
+    },
+    "particle": {
+      "value": "CUSTOM:SugarCrashParticle"
+    },
+    "onAddedSound": {
+      "value": ""
+    },
+    "isInstant": false,
+    "mobEffectCategory": "HARMFUL",
+    "renderStatusInInventory": true,
+    "renderStatusInHUD": true,
+    "isCuredbyHoney": true,
+    "modifiers": [
+      {
+        "attribute": {
+          "value": "MOVEMENT_SPEED"
+        },
+        "amount": -0.03,
+        "operation": "ADD_VALUE"
+      },
+      {
+        "attribute": {
+          "value": "SWIM_SPEED"
+        },
+        "amount": -0.03,
+        "operation": "ADD_VALUE"
+      },
+      {
+        "attribute": {
+          "value": "FLYING_SPEED"
+        },
+        "amount": -0.03,
+        "operation": "ADD_VALUE"
+      }
+    ]
+  }
+}

@@ -88,7 +88,7 @@
           "src/main/java/net/nwt/tilledtales/procedures/ChurnedButterTooltipProcedure.java"
         ]
       },
-      "path": "~/Items/Processed/Chruned Butter"
+      "path": "~/Items/Resources/Processed/Chruned Butter"
     },
     {
       "name": "ChurnedButter",
@@ -102,7 +102,7 @@
           "src/main/java/net/nwt/tilledtales/item/ChurnedButterItem.java"
         ]
       },
-      "path": "~/Items/Processed/Chruned Butter"
+      "path": "~/Items/Resources/Processed/Chruned Butter"
     },
     {
       "name": "ChurningEffect",
@@ -243,7 +243,7 @@
           "src/main/resources/assets/tilled_tales/models/item/salt.json"
         ]
       },
-      "path": "~/Items/Raw/Salt"
+      "path": "~/Items/Resources/Raw/Salt"
     },
     {
       "name": "SaltTooltip",
@@ -258,7 +258,7 @@
           "src/main/java/net/nwt/tilledtales/procedures/SaltTooltipProcedure.java"
         ]
       },
-      "path": "~/Items/Raw/Salt"
+      "path": "~/Items/Resources/Raw/Salt"
     },
     {
       "name": "SaltBlockFromSaltCrafting",
@@ -286,7 +286,7 @@
           "src/main/resources/data/tilled_tales/recipe/salt_from_salt_block.json"
         ]
       },
-      "path": "~/Items/Raw/Salt"
+      "path": "~/Items/Resources/Raw/Salt"
     },
     {
       "name": "SaltBlockLoot",
@@ -453,7 +453,7 @@
           "src/main/java/net/nwt/tilledtales/procedures/FlourTooltipProcedure.java"
         ]
       },
-      "path": "~/Items/Processed/Flour"
+      "path": "~/Items/Resources/Processed/Flour"
     },
     {
       "name": "Flour",
@@ -467,7 +467,7 @@
           "src/main/resources/assets/tilled_tales/models/item/flour.json"
         ]
       },
-      "path": "~/Items/Processed/Flour"
+      "path": "~/Items/Resources/Processed/Flour"
     },
     {
       "name": "OakIceBoxTooltip",
@@ -656,7 +656,7 @@
           "src/main/java/net/nwt/tilledtales/procedures/PieCrustTooltipProcedure.java"
         ]
       },
-      "path": "~/Items/Processed/PieCrust"
+      "path": "~/Items/Resources/Processed/Pie Crust"
     },
     {
       "name": "PieCrust",
@@ -670,7 +670,7 @@
           "src/main/resources/assets/tilled_tales/models/item/pie_crust.json"
         ]
       },
-      "path": "~/Items/Processed/PieCrust"
+      "path": "~/Items/Resources/Processed/Pie Crust"
     },
     {
       "name": "Counter",
@@ -1445,7 +1445,7 @@
           "src/main/java/net/nwt/tilledtales/item/WheatSeedsItem.java"
         ]
       },
-      "path": "~/Items/Bags/Wheat"
+      "path": "~/Items/Bags/Seeds/Wheat"
     },
     {
       "name": "BasicFertilizer",
@@ -1459,7 +1459,7 @@
           "src/main/java/net/nwt/tilledtales/item/BasicFertilizerItem.java"
         ]
       },
-      "path": "~/Items/Bags/Fertilizer"
+      "path": "~/Items/Bags/Fertilizer/Basic"
     },
     {
       "name": "PremiumFertilizer",
@@ -1473,7 +1473,7 @@
           "src/main/resources/assets/tilled_tales/models/item/premium_fertilizer.json"
         ]
       },
-      "path": "~/Items/Bags/Fertilizer"
+      "path": "~/Items/Bags/Fertilizer/Premium"
     },
     {
       "name": "PlanterFertilizer",
@@ -1575,7 +1575,7 @@
           "src/main/resources/assets/tilled_tales/models/item/wheat_grain.json"
         ]
       },
-      "path": "~/Items/Food/WheatGrain"
+      "path": "~/Items/Resources/Raw/Wheat Grain"
     },
     {
       "name": "WheatGrainTooltip",
@@ -1590,89 +1590,7 @@
           "src/main/java/net/nwt/tilledtales/procedures/WheatGrainTooltipProcedure.java"
         ]
       },
-      "path": "~/Items/Food/WheatGrain"
-    },
-    {
-      "name": "PlacePlanterFromItem",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "place_planter_from_item",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "direction",
-            "type": "direction"
-          },
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "material",
-            "type": "string"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ],
-        "files": [
-          "src/main/java/net/nwt/tilledtales/procedures/PlacePlanterFromItemProcedure.java"
-        ]
-      },
-      "path": "~/Items/Blocks/Planters/Procedures"
-    },
-    {
-      "name": "DiamondPlanterRightclickedOnBlock",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "diamond_planter_rightclicked_on_block",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "direction",
-            "type": "direction"
-          },
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ],
-        "files": [
-          "src/main/java/net/nwt/tilledtales/procedures/DiamondPlanterRightclickedOnBlockProcedure.java"
-        ]
-      },
-      "path": "~/Items/Blocks/Planters/Procedures"
+      "path": "~/Items/Resources/Raw/Wheat Grain"
     },
     {
       "name": "DiamondPlanter",
@@ -1686,7 +1604,7 @@
           "src/main/resources/assets/tilled_tales/models/item/diamond_planter.json"
         ]
       },
-      "path": "~/Items/Blocks/Planters/Items"
+      "path": "~/Items/Blocks/Planters"
     },
     {
       "name": "PlanterBlockBroken",
@@ -1759,53 +1677,6 @@
       "path": "~/Blocks/Misc/Planter/Procedures"
     },
     {
-      "name": "PlayPlanterSoundWhenPlaced",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "play_planter_sound_when_placed",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "offsetX",
-            "type": "number"
-          },
-          {
-            "name": "offsetY",
-            "type": "number"
-          },
-          {
-            "name": "offsetZ",
-            "type": "number"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "material",
-            "type": "string"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ],
-        "files": [
-          "src/main/java/net/nwt/tilledtales/procedures/PlayPlanterSoundWhenPlacedProcedure.java"
-        ]
-      },
-      "path": "~/Items/Blocks/Planters/Procedures"
-    },
-    {
       "name": "GoldenPlanter",
       "type": "item",
       "compiles": true,
@@ -1817,7 +1688,7 @@
           "src/main/java/net/nwt/tilledtales/item/GoldenPlanterItem.java"
         ]
       },
-      "path": "~/Items/Blocks/Planters/Items"
+      "path": "~/Items/Blocks/Planters"
     },
     {
       "name": "IronPlanter",
@@ -1831,7 +1702,7 @@
           "src/main/resources/assets/tilled_tales/models/item/iron_planter.json"
         ]
       },
-      "path": "~/Items/Blocks/Planters/Items"
+      "path": "~/Items/Blocks/Planters"
     },
     {
       "name": "StonePlanter",
@@ -1845,7 +1716,7 @@
           "src/main/java/net/nwt/tilledtales/item/StonePlanterItem.java"
         ]
       },
-      "path": "~/Items/Blocks/Planters/Items"
+      "path": "~/Items/Blocks/Planters"
     },
     {
       "name": "WoodenPlanter",
@@ -1859,7 +1730,7 @@
           "src/main/resources/assets/tilled_tales/models/item/wooden_planter.json"
         ]
       },
-      "path": "~/Items/Blocks/Planters/Items"
+      "path": "~/Items/Blocks/Planters"
     },
     {
       "name": "WoodenPlanterBlock",
@@ -2039,7 +1910,7 @@
           "src/main/java/net/nwt/tilledtales/procedures/BlueberrySeedsTooltipProcedure.java"
         ]
       },
-      "path": "~/Items/Bags/Blueberry"
+      "path": "~/Items/Bags/Seeds/Blueberry"
     },
     {
       "name": "BlueberrySeeds",
@@ -2053,36 +1924,7 @@
           "src/main/resources/assets/tilled_tales/models/item/blueberry_seeds.json"
         ]
       },
-      "path": "~/Items/Bags/Blueberry"
-    },
-    {
-      "name": "BlueBerriesTooltip",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "blue_berries_tooltip",
-      "metadata": {
-        "dependencies": [],
-        "return_type": "string",
-        "files": [
-          "src/main/java/net/nwt/tilledtales/procedures/BlueBerriesTooltipProcedure.java"
-        ]
-      },
-      "path": "~/Items/Food/Blueberries"
-    },
-    {
-      "name": "BlueBerries",
-      "type": "item",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "blue_berries",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/tilled_tales/models/item/blue_berries.json",
-          "src/main/java/net/nwt/tilledtales/item/BlueBerriesItem.java"
-        ]
-      },
-      "path": "~/Items/Food/Blueberries"
+      "path": "~/Items/Bags/Seeds/Blueberry"
     },
     {
       "name": "StrawberriesTooltip",
@@ -2097,7 +1939,7 @@
           "src/main/java/net/nwt/tilledtales/procedures/StrawberriesTooltipProcedure.java"
         ]
       },
-      "path": "~/Items/Food/Strawberries"
+      "path": "~/Items/Food/Raw/Strawberries"
     },
     {
       "name": "Strawberries",
@@ -2111,7 +1953,7 @@
           "src/main/resources/assets/tilled_tales/models/item/strawberries.json"
         ]
       },
-      "path": "~/Items/Food/Strawberries"
+      "path": "~/Items/Food/Raw/Strawberries"
     },
     {
       "name": "WheatSeedsTooltip",
@@ -2126,7 +1968,7 @@
           "src/main/java/net/nwt/tilledtales/procedures/WheatSeedsTooltipProcedure.java"
         ]
       },
-      "path": "~/Items/Bags/Wheat"
+      "path": "~/Items/Bags/Seeds/Wheat"
     },
     {
       "name": "BasicFertilizerTooltip",
@@ -2141,7 +1983,497 @@
           "src/main/java/net/nwt/tilledtales/procedures/BasicFertilizerTooltipProcedure.java"
         ]
       },
-      "path": "~/Items/Bags/Fertilizer"
+      "path": "~/Items/Bags/Fertilizer/Basic"
+    },
+    {
+      "name": "CopperPlanterBlock",
+      "type": "block",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "copper_planter_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/nwt/tilledtales/block/entity/CopperPlanterBlockBlockEntity.java",
+          "src/main/resources/assets/tilled_tales/models/block/copper_planter_block.json",
+          "src/main/resources/data/tilled_tales/loot_table/blocks/copper_planter_block.json",
+          "src/main/resources/assets/tilled_tales/blockstates/copper_planter_block.json",
+          "src/main/resources/assets/tilled_tales/models/item/copper_planter_block.json",
+          "src/main/java/net/nwt/tilledtales/block/CopperPlanterBlockBlock.java"
+        ]
+      },
+      "path": "~/Blocks/Misc/Planter/Blocks"
+    },
+    {
+      "name": "CopperPlanterBlockTooltip",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "copper_planter_block_tooltip",
+      "metadata": {
+        "dependencies": [],
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/nwt/tilledtales/procedures/CopperPlanterBlockTooltipProcedure.java"
+        ]
+      },
+      "path": "~/Blocks/Misc/Planter/Tooltips"
+    },
+    {
+      "name": "CopperPlanter",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "copper_planter",
+      "metadata": {
+        "files": [
+          "src/main/java/net/nwt/tilledtales/item/CopperPlanterItem.java",
+          "src/main/resources/assets/tilled_tales/models/item/copper_planter.json"
+        ]
+      },
+      "path": "~/Items/Blocks/Planters"
+    },
+    {
+      "name": "StrawberrySeeds",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "strawberry_seeds",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/tilled_tales/models/item/strawberry_seeds.json",
+          "src/main/java/net/nwt/tilledtales/item/StrawberrySeedsItem.java"
+        ]
+      },
+      "path": "~/Items/Bags/Seeds/Strawberry"
+    },
+    {
+      "name": "StrawberrySeedsTooltip",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "strawberry_seeds_tooltip",
+      "metadata": {
+        "dependencies": [],
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/nwt/tilledtales/procedures/StrawberrySeedsTooltipProcedure.java"
+        ]
+      },
+      "path": "~/Items/Bags/Seeds/Strawberry"
+    },
+    {
+      "name": "BlueberryPieTooltip",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blueberry_pie_tooltip",
+      "metadata": {
+        "dependencies": [],
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/nwt/tilledtales/procedures/BlueberryPieTooltipProcedure.java"
+        ]
+      },
+      "path": "~/Items/Food/Processed/Blueberry Pie"
+    },
+    {
+      "name": "BlueberryPie",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blueberry_pie",
+      "metadata": {
+        "files": [
+          "src/main/java/net/nwt/tilledtales/item/BlueberryPieItem.java",
+          "src/main/resources/assets/tilled_tales/models/item/blueberry_pie.json"
+        ]
+      },
+      "path": "~/Items/Food/Processed/Blueberry Pie"
+    },
+    {
+      "name": "FormatTooltipDescription",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "format_tooltip_description",
+      "metadata": {
+        "dependencies": [],
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/nwt/tilledtales/procedures/FormatTooltipDescriptionProcedure.java"
+        ]
+      },
+      "path": "~/Script"
+    },
+    {
+      "name": "FormatTooltipList",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "format_tooltip_list",
+      "metadata": {
+        "dependencies": [],
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/nwt/tilledtales/procedures/FormatTooltipListProcedure.java"
+        ]
+      },
+      "path": "~/Script"
+    },
+    {
+      "name": "FormatTooltipNegative",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "format_tooltip_negative",
+      "metadata": {
+        "dependencies": [],
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/nwt/tilledtales/procedures/FormatTooltipNegativeProcedure.java"
+        ]
+      },
+      "path": "~/Script"
+    },
+    {
+      "name": "FormatTooltipPositive",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "format_tooltip_positive",
+      "metadata": {
+        "dependencies": [],
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/nwt/tilledtales/procedures/FormatTooltipPositiveProcedure.java"
+        ]
+      },
+      "path": "~/Script"
+    },
+    {
+      "name": "FormatTooltipText",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "format_tooltip_text",
+      "metadata": {
+        "dependencies": [],
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/nwt/tilledtales/procedures/FormatTooltipTextProcedure.java"
+        ]
+      },
+      "path": "~/Script"
+    },
+    {
+      "name": "FormatTooltipTitle",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "format_tooltip_title",
+      "metadata": {
+        "dependencies": [],
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/nwt/tilledtales/procedures/FormatTooltipTitleProcedure.java"
+        ]
+      },
+      "path": "~/Script"
+    },
+    {
+      "name": "FormatTooltipWarning",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "format_tooltip_warning",
+      "metadata": {
+        "dependencies": [],
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/nwt/tilledtales/procedures/FormatTooltipWarningProcedure.java"
+        ]
+      },
+      "path": "~/Script"
+    },
+    {
+      "name": "SugarRush",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sugar_rush",
+      "metadata": {
+        "files": [
+          "src/main/java/net/nwt/tilledtales/potion/SugarRushMobEffect.java"
+        ]
+      },
+      "path": "~/Effects"
+    },
+    {
+      "name": "SugarRushParticle",
+      "type": "particle",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sugar_rush_particle",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/tilled_tales/particles/sugar_rush_particle.json",
+          "src/main/java/net/nwt/tilledtales/client/particle/SugarRushParticleParticle.java"
+        ]
+      },
+      "path": "~/Particles/Effects"
+    },
+    {
+      "name": "SugarCrash",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sugar_crash",
+      "metadata": {
+        "files": [
+          "src/main/java/net/nwt/tilledtales/potion/SugarCrashMobEffect.java"
+        ]
+      },
+      "path": "~/Effects"
+    },
+    {
+      "name": "SugarCrashParticle",
+      "type": "particle",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sugar_crash_particle",
+      "metadata": {
+        "files": [
+          "src/main/java/net/nwt/tilledtales/client/particle/SugarCrashParticleParticle.java",
+          "src/main/resources/assets/tilled_tales/particles/sugar_crash_particle.json"
+        ]
+      },
+      "path": "~/Particles/Effects"
+    },
+    {
+      "name": "SugarRushEffectExpires",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sugar_rush_effect_expires",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "amplifier",
+            "type": "number"
+          }
+        ],
+        "files": [
+          "src/main/java/net/nwt/tilledtales/procedures/SugarRushEffectExpiresProcedure.java"
+        ]
+      },
+      "path": "~/Effects"
+    },
+    {
+      "name": "BlueberryPiePlayerFinishesUsingItem",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blueberry_pie_player_finishes_using_item",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/nwt/tilledtales/procedures/BlueberryPiePlayerFinishesUsingItemProcedure.java"
+        ]
+      },
+      "path": "~/Items/Food/Processed/Blueberry Pie"
+    },
+    {
+      "name": "Blueberries",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blueberries",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/tilled_tales/models/item/blueberries.json",
+          "src/main/java/net/nwt/tilledtales/item/BlueberriesItem.java"
+        ]
+      },
+      "path": "~/Items/Food/Raw/Blueberries"
+    },
+    {
+      "name": "BlueberriesTooltip",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blueberries_tooltip",
+      "metadata": {
+        "dependencies": [],
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/nwt/tilledtales/procedures/BlueberriesTooltipProcedure.java"
+        ]
+      },
+      "path": "~/Items/Food/Raw/Blueberries"
+    },
+    {
+      "name": "PlayerRightClickedOnPlanter",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "player_right_clicked_on_planter",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "direction",
+            "type": "direction"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/nwt/tilledtales/procedures/PlayerRightClickedOnPlanterProcedure.java"
+        ]
+      },
+      "path": "~/Items/Blocks/Planters/Procedures"
+    },
+    {
+      "name": "AddPlanterBlockFromPlanterItem",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "add_planter_block_from_planter_item",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "direction",
+            "type": "direction"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "material",
+            "type": "string"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/nwt/tilledtales/procedures/AddPlanterBlockFromPlanterItemProcedure.java"
+        ]
+      },
+      "path": "~/Items/Blocks/Planters/Procedures"
+    },
+    {
+      "name": "PlayPlanterSoundWhenPlanterPlaced",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "play_planter_sound_when_planter_placed",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "offsetX",
+            "type": "number"
+          },
+          {
+            "name": "offsetY",
+            "type": "number"
+          },
+          {
+            "name": "offsetZ",
+            "type": "number"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "material",
+            "type": "string"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/nwt/tilledtales/procedures/PlayPlanterSoundWhenPlanterPlacedProcedure.java"
+        ]
+      },
+      "path": "~/Items/Blocks/Planters/Procedures"
+    },
+    {
+      "name": "PremiumFertilizerTooltip",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "premium_fertilizer_tooltip",
+      "metadata": {
+        "dependencies": [],
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/nwt/tilledtales/procedures/PremiumFertilizerTooltipProcedure.java"
+        ]
+      },
+      "path": "~/Items/Bags/Fertilizer/Premium"
+    },
+    {
+      "name": "TilledTalesFood",
+      "type": "tab",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tilled_tales_food",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Creative Tabs"
     }
   ],
   "variable_elements": [],
@@ -2214,6 +2546,7 @@
       "Blocks.CORNFLOWER"
     ],
     "ITEMS:minecraft:enchantable/durability": [
+      "~CUSTOM:StrawberrySeeds",
       "~CUSTOM:BlueberrySeeds",
       "~CUSTOM:PremiumFertilizer",
       "~CUSTOM:BasicFertilizer",
@@ -2237,7 +2570,8 @@
       "TAG:mod:planters/golden",
       "TAG:mod:planters/iron",
       "TAG:mod:planters/stone",
-      "TAG:mod:planters/wooden"
+      "TAG:mod:planters/wooden",
+      "TAG:mod:planter/copper"
     ],
     "BLOCKS:minecraft:needs_iron_tool": [
       "TAG:mod:planters/diamond",
@@ -2266,7 +2600,8 @@
       "TAG:mod:planters/golden",
       "TAG:mod:planters/iron",
       "TAG:mod:planters/stone",
-      "TAG:mod:planters/wooden"
+      "TAG:mod:planters/wooden",
+      "TAG:mod:planter/copper"
     ],
     "ITEMS:mod:planters/diamond": [
       "CUSTOM:DiamondPlanter"
@@ -2285,9 +2620,20 @@
     ],
     "ITEMS:mod:seeds/blueberries": [
       "CUSTOM:BlueberrySeeds"
+    ],
+    "ITEMS:mod:planter/copper": [
+      "CUSTOM:CopperPlanter"
+    ],
+    "BLOCKS:mod:planter/copper": [
+      "CUSTOM:CopperPlanterBlock"
     ]
   },
   "tab_element_order": {
+    "FOOD": [
+      "Blueberries",
+      "Strawberries",
+      "BlueberryPie"
+    ],
     "CUSTOM:TilledTalesBlocks": [
       "SaltBlock",
       "Counter",
@@ -2297,6 +2643,7 @@
       "Sprinkler",
       "WoodenPlanter",
       "StonePlanter",
+      "CopperPlanter",
       "IronPlanter",
       "GoldenPlanter",
       "DiamondPlanter",
@@ -2317,32 +2664,36 @@
       "MagentaMixingBowl",
       "PinkMixingBowl"
     ],
+    "CUSTOM:TilledTalesFood": [
+      "Blueberries",
+      "Strawberries",
+      "BlueberryPie"
+    ],
     "CUSTOM:TilledTalesItems": [
       "BasicFertilizer",
       "PremiumFertilizer",
       "WheatSeeds",
+      "BlueberrySeeds",
+      "StrawberrySeeds",
       "WheatGrain",
       "Salt",
       "Flour",
       "ChurnedButter",
-      "PieCrust",
-      "BlueberrySeeds",
-      "BlueBerries",
-      "Strawberries"
+      "PieCrust"
     ]
   },
   "language_map": {
     "en_us": {
       "block.tilled_tales.oak_dash_churn": "Oak Dash Churn",
       "block.tilled_tales.oak_dash_churn_up": "Oak Dash Churn",
-      "tooltip.tilled_tales.churned_butter_0": "Freshly churned, rich butter!",
+      "tooltip.tilled_tales.description.churned_butter": "Freshly churned, rich butter!",
       "item.tilled_tales.churned_butter": "Churned Butter",
       "tooltip.tilled_tales.salt_block_0": "Naturally formed, mineral-rich salt!",
       "block.tilled_tales.salt_block": "Salt Block",
       "item_group.tilled_tales.tilled_tales_blocks": "Tilled Tales Blocks",
       "item_group.tilled_tales.tilled_tales_items": "Tilled Tales Items",
       "item.tilled_tales.salt": "Salt",
-      "tooltip.tilled_tales.salt_0": "Flavorful crystals for hearty cooking!",
+      "tooltip.tilled_tales.description.salt": "Flavorful crystals for hearty cooking!",
       "item.tilled_tales.oak_dash_churn": "Oak Dash Churn",
       "item.tilled_tales.oak_dash_churn_up": "Oak Dash Churn",
       "item.tilled_tales.salt_block": "Salt Block",
@@ -2352,7 +2703,7 @@
       "block.tilled_tales.oak_ice_box_2": "Oak Ice Box",
       "block.tilled_tales.millstone": "Millstone",
       "block.tilled_tales.millstone_1": "Millstone",
-      "tooltip.tilled_tales.flour_0": "Finely milled grain for baking!",
+      "tooltip.tilled_tales.description.flour": "Finely milled grain for baking!",
       "item.tilled_tales.flour": "Flour",
       "tooltip.tilled_tales.millstone_0": "Grinds grain into fine flour!",
       "block.tilled_tales.millstone_2": "Millstone",
@@ -2363,7 +2714,7 @@
       "block.tilled_tales.millstone_7": "Millstone",
       "block.tilled_tales.millstone_8": "Millstone",
       "block.tilled_tales.millstone_9": "Millstone",
-      "tooltip.tilled_tales.pie_crust_0": "Buttery base for sweet pies!",
+      "tooltip.tilled_tales.description.pie_crust": "Buttery base for pies!",
       "item.tilled_tales.pie_crust": "Pie Crust",
       "tooltip.tilled_tales.counter_0": "Sturdy surface for food preparation!",
       "block.tilled_tales.counter": "Counter",
@@ -2391,7 +2742,7 @@
       "item.tilled_tales.premium_fertilizer": "Premium Fertilizer",
       "block.tilled_tales.sprinkler": "Sprinkler",
       "item.tilled_tales.wheat_grain": "Wheat Grain",
-      "tooltip.tilled_tales.what_grain_0": "Golden kernels ready for milling!",
+      "tooltip.tilled_tales.description.wheat_grain": "Wheat kernels ready for milling!",
       "item.tilled_tales.diamond_planter": "Diamond Planter",
       "item.tilled_tales.golden_planter": "Golden Planter",
       "item.tilled_tales.iron_planter": "Iron Planter",
@@ -2403,12 +2754,36 @@
       "block.tilled_tales.golden_planter_block": "Golden Planter",
       "block.tilled_tales.diamond_planter_block": "Diamond Planter",
       "item.tilled_tales.blueberry_seeds": "Blueberry Seeds",
-      "item.tilled_tales.blue_berries": "Blue Berries",
-      "tooltip.tilled_tales.blueberries_0": "A sweet dark blue berry!",
-      "tooltip.tilled_tales.buleberry_seeds_0": "A bag full of blueberry seeds!",
+      "tooltip.tilled_tales.description.blueberries": "A sweet dark blue berry!",
+      "tooltip.tilled_tales.description.blueberry_seeds": "A bag full of blueberry seeds!",
       "item.tilled_tales.strawberries": "Strawberries",
-      "tooltip.tilled_tales.strawberries_0": "A sweet tasty red berry!",
-      "tooltip.tilled_tales.wheat_seeds_0": "A bag full of wheat seeds!"
+      "tooltip.tilled_tales.description.strawberries": "A sweet tasty red berry!",
+      "tooltip.tilled_tales.description.wheat_seeds": "A bag full of wheat seeds!",
+      "block.tilled_tales.copper_planter_block": "Copper Planter",
+      "tooltip.tilled_tales.copper_planter_0": "A planter made of copper!",
+      "tooltip.tilled_tales.diamond_planter_0": "A planter made from the finest of diamonds!",
+      "tooltip.tilled_tales.golden_planter_0": "A planter made from valuable gold!",
+      "tooltip.tilled_tales.iron_planter_0": "A planter made from refined iron!",
+      "tooltip.tilled_tales.stone_planter_0": "A planter made from raw stone!",
+      "tooltip.tilled_tales.wooden_planter_0": "A planter made from hard wood!",
+      "item.tilled_tales.copper_planter": "Wooden Planter",
+      "item.tilled_tales.strawberry_seeds": "Strawberry Seeds",
+      "tooltip.tilled_tales.description.strawberry_seeds": "A bag full of strawberry seeds!",
+      "item.tilled_tales.blueberry_pie": "Blueberry Pie",
+      "tooltip.tilled_tales.description.buleberry_pie": "A sweet crust with blueberry filling!",
+      "tooltip.tilled_tales.title.effects": "Effects",
+      "effect.tilled_tales.sugar_rush": "Sugar Rush",
+      "effect.tilled_tales.sugar_crash": "Sugar Crash",
+      "tooltip.tilled_tales.title.stats": "Stats",
+      "tooltip.tilled_tales.stats.saturation": "Saturation",
+      "tooltip.tilled_tales.stats.nutrients": "Nutrients",
+      "tooltip.tilled_tales.none": "None",
+      "tooltip.tilled_tales.title.description": "Description",
+      "item.tilled_tales.blueberries": "Blueberries",
+      "tooltip.tilled_tales.stats.yield_bonus": "Yield bonus",
+      "tooltip.tilled_tales.description.basic_fertilizer": "Basic fertilizer that fertilizes your crops!",
+      "tooltip.tilled_tales.description.premium_fertilizer": "Premium fertilizer that fertilizes your crops!",
+      "item_group.tilled_tales.tilled_tales_food": "Tilled Tales Food"
     }
   },
   "metadata": {
@@ -2418,6 +2793,7 @@
       "src/main/java/net/nwt/tilledtales/network/MenuStateUpdateMessage.java",
       "src/main/java/net/nwt/tilledtales/init/TilledTalesModParticles.java",
       "src/main/java/net/nwt/tilledtales/init/TilledTalesModParticleTypes.java",
+      "src/main/java/net/nwt/tilledtales/init/TilledTalesModMobEffects.java",
       "src/main/java/net/nwt/tilledtales/init/TilledTalesModBlocks.java",
       "src/main/java/net/nwt/tilledtales/init/TilledTalesModBlockEntities.java",
       "src/main/java/net/nwt/tilledtales/init/TilledTalesModItems.java",
@@ -2544,45 +2920,37 @@
         "name": "Items",
         "children": [
           {
-            "name": "Processed",
-            "children": [
-              {
-                "name": "Chruned Butter",
-                "children": []
-              },
-              {
-                "name": "Flour",
-                "children": []
-              },
-              {
-                "name": "PieCrust",
-                "children": []
-              }
-            ]
-          },
-          {
             "name": "Bags",
             "children": [
               {
-                "name": "Blueberry",
-                "children": []
-              },
-              {
                 "name": "Fertilizer",
-                "children": []
+                "children": [
+                  {
+                    "name": "Basic",
+                    "children": []
+                  },
+                  {
+                    "name": "Premium",
+                    "children": []
+                  }
+                ]
               },
               {
-                "name": "Wheat",
-                "children": []
-              }
-            ]
-          },
-          {
-            "name": "Raw",
-            "children": [
-              {
-                "name": "Salt",
-                "children": []
+                "name": "Seeds",
+                "children": [
+                  {
+                    "name": "Strawberry",
+                    "children": []
+                  },
+                  {
+                    "name": "Wheat",
+                    "children": []
+                  },
+                  {
+                    "name": "Blueberry",
+                    "children": []
+                  }
+                ]
               }
             ]
           },
@@ -2592,10 +2960,6 @@
               {
                 "name": "Planters",
                 "children": [
-                  {
-                    "name": "Items",
-                    "children": []
-                  },
                   {
                     "name": "Procedures",
                     "children": []
@@ -2608,16 +2972,61 @@
             "name": "Food",
             "children": [
               {
-                "name": "WheatGrain",
-                "children": []
+                "name": "Raw",
+                "children": [
+                  {
+                    "name": "Strawberries",
+                    "children": []
+                  },
+                  {
+                    "name": "Blueberries",
+                    "children": []
+                  }
+                ]
               },
               {
-                "name": "Blueberries",
-                "children": []
+                "name": "Processed",
+                "children": [
+                  {
+                    "name": "Blueberry Pie",
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Resources",
+            "children": [
+              {
+                "name": "Processed",
+                "children": [
+                  {
+                    "name": "Pie Crust",
+                    "children": []
+                  },
+                  {
+                    "name": "Flour",
+                    "children": []
+                  },
+                  {
+                    "name": "Chruned Butter",
+                    "children": []
+                  }
+                ]
               },
               {
-                "name": "Strawberries",
-                "children": []
+                "name": "Raw",
+                "children": [
+                  {
+                    "name": "Salt",
+                    "children": []
+                  },
+                  {
+                    "name": "Wheat Grain",
+                    "children": []
+                  }
+                ]
               }
             ]
           }
@@ -2646,8 +3055,20 @@
           {
             "name": "Churning Effect",
             "children": []
+          },
+          {
+            "name": "Effects",
+            "children": []
           }
         ]
+      },
+      {
+        "name": "Script",
+        "children": []
+      },
+      {
+        "name": "Effects",
+        "children": []
       }
     ]
   },

@@ -5,6 +5,7 @@
 	"elements": [
 		{
 			"name": "fertilizer",
+			"shade": false,
 			"from": [1, 6.5, 1],
 			"to": [15, 6.5, 15],
 			"rotation": {"angle": 0, "axis": "y", "origin": [0, 4.2, 0]},

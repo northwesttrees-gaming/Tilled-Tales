@@ -56,6 +56,7 @@ public class TilledTalesModBlocks {
 	public static final DeferredBlock<Block> IRON_PLANTER_BLOCK;
 	public static final DeferredBlock<Block> GOLDEN_PLANTER_BLOCK;
 	public static final DeferredBlock<Block> DIAMOND_PLANTER_BLOCK;
+	public static final DeferredBlock<Block> COPPER_PLANTER_BLOCK;
 	static {
 		OAK_DASH_CHURN = REGISTRY.register("oak_dash_churn", OakDashChurnBlock::new);
 		OAK_DASH_CHURN_UP = REGISTRY.register("oak_dash_churn_up", OakDashChurnUpBlock::new);
@@ -96,6 +97,7 @@ public class TilledTalesModBlocks {
 		IRON_PLANTER_BLOCK = REGISTRY.register("iron_planter_block", IronPlanterBlockBlock::new);
 		GOLDEN_PLANTER_BLOCK = REGISTRY.register("golden_planter_block", GoldenPlanterBlockBlock::new);
 		DIAMOND_PLANTER_BLOCK = REGISTRY.register("diamond_planter_block", DiamondPlanterBlockBlock::new);
+		COPPER_PLANTER_BLOCK = REGISTRY.register("copper_planter_block", CopperPlanterBlockBlock::new);
 	}
 
 	// Start of user code block custom blocks

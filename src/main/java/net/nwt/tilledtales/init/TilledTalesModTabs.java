@@ -7,12 +7,17 @@ import net.nwt.tilledtales.TilledTalesMod;
 
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.neoforged.neoforge.registries.DeferredHolder;
+import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
+import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.bus.api.SubscribeEvent;
 
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.network.chat.Component;
 import net.minecraft.core.registries.Registries;
 
+@EventBusSubscriber
 public class TilledTalesModTabs {
 	public static final DeferredRegister<CreativeModeTab> REGISTRY = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, TilledTalesMod.MODID);
 	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> TILLED_TALES_BLOCKS = REGISTRY.register("tilled_tales_blocks",
@@ -25,6 +30,7 @@ public class TilledTalesModTabs {
 				tabData.accept(TilledTalesModBlocks.SPRINKLER.get().asItem());
 				tabData.accept(TilledTalesModItems.WOODEN_PLANTER.get());
 				tabData.accept(TilledTalesModItems.STONE_PLANTER.get());
+				tabData.accept(TilledTalesModItems.COPPER_PLANTER.get());
 				tabData.accept(TilledTalesModItems.IRON_PLANTER.get());
 				tabData.accept(TilledTalesModItems.GOLDEN_PLANTER.get());
 				tabData.accept(TilledTalesModItems.DIAMOND_PLANTER.get());
@@ -45,18 +51,32 @@ public class TilledTalesModTabs {
 				tabData.accept(TilledTalesModBlocks.MAGENTA_MIXING_BOWL.get().asItem());
 				tabData.accept(TilledTalesModBlocks.PINK_MIXING_BOWL.get().asItem());
 			}).build());
+	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> TILLED_TALES_FOOD = REGISTRY.register("tilled_tales_food",
+			() -> CreativeModeTab.builder().title(Component.translatable("item_group.tilled_tales.tilled_tales_food")).icon(() -> new ItemStack(TilledTalesModItems.BLUEBERRY_PIE.get())).displayItems((parameters, tabData) -> {
+				tabData.accept(TilledTalesModItems.BLUEBERRIES.get());
+				tabData.accept(TilledTalesModItems.STRAWBERRIES.get());
+				tabData.accept(TilledTalesModItems.BLUEBERRY_PIE.get());
+			}).withTabsBefore(TILLED_TALES_BLOCKS.getId()).build());
 	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> TILLED_TALES_ITEMS = REGISTRY.register("tilled_tales_items",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.tilled_tales.tilled_tales_items")).icon(() -> new ItemStack(TilledTalesModItems.CHURNED_BUTTER.get())).displayItems((parameters, tabData) -> {
 				tabData.accept(TilledTalesModItems.BASIC_FERTILIZER.get());
 				tabData.accept(TilledTalesModItems.PREMIUM_FERTILIZER.get());
 				tabData.accept(TilledTalesModItems.WHEAT_SEEDS.get());
+				tabData.accept(TilledTalesModItems.BLUEBERRY_SEEDS.get());
+				tabData.accept(TilledTalesModItems.STRAWBERRY_SEEDS.get());
 				tabData.accept(TilledTalesModItems.WHEAT_GRAIN.get());
 				tabData.accept(TilledTalesModItems.SALT.get());
 				tabData.accept(TilledTalesModItems.FLOUR.get());
 				tabData.accept(TilledTalesModItems.CHURNED_BUTTER.get());
 				tabData.accept(TilledTalesModItems.PIE_CRUST.get());
-				tabData.accept(TilledTalesModItems.BLUEBERRY_SEEDS.get());
-				tabData.accept(TilledTalesModItems.BLUE_BERRIES.get());
-				tabData.accept(TilledTalesModItems.STRAWBERRIES.get());
-			}).withTabsBefore(TILLED_TALES_BLOCKS.getId()).build());
+			}).withTabsBefore(TILLED_TALES_FOOD.getId()).build());
+
+	@SubscribeEvent
+	public static void buildTabContentsVanilla(BuildCreativeModeTabContentsEvent tabData) {
+		if (tabData.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS) {
+			tabData.accept(TilledTalesModItems.BLUEBERRIES.get());
+			tabData.accept(TilledTalesModItems.STRAWBERRIES.get());
+			tabData.accept(TilledTalesModItems.BLUEBERRY_PIE.get());
+		}
+	}
 }

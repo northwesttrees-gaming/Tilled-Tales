@@ -17,7 +17,7 @@ import net.minecraft.core.Direction;
 import javax.annotation.Nullable;
 
 @EventBusSubscriber
-public class DiamondPlanterRightclickedOnBlockProcedure {
+public class PlayerRightClickedOnPlanterProcedure {
 	@SubscribeEvent
 	public static void onRightClickBlock(PlayerInteractEvent.RightClickBlock event) {
 		if (event.getHand() != InteractionHand.MAIN_HAND)
@@ -33,15 +33,17 @@ public class DiamondPlanterRightclickedOnBlockProcedure {
 		if (direction == null || entity == null)
 			return;
 		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == TilledTalesModItems.DIAMOND_PLANTER.get()) {
-			PlacePlanterFromItemProcedure.execute(world, x, y, z, direction, entity, "diamond");
+			AddPlanterBlockFromPlanterItemProcedure.execute(world, x, y, z, direction, entity, "diamond");
 		} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == TilledTalesModItems.GOLDEN_PLANTER.get()) {
-			PlacePlanterFromItemProcedure.execute(world, x, y, z, direction, entity, "golden");
+			AddPlanterBlockFromPlanterItemProcedure.execute(world, x, y, z, direction, entity, "golden");
 		} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == TilledTalesModItems.IRON_PLANTER.get()) {
-			PlacePlanterFromItemProcedure.execute(world, x, y, z, direction, entity, "iron");
+			AddPlanterBlockFromPlanterItemProcedure.execute(world, x, y, z, direction, entity, "iron");
+		} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == TilledTalesModItems.COPPER_PLANTER.get()) {
+			AddPlanterBlockFromPlanterItemProcedure.execute(world, x, y, z, direction, entity, "copper");
 		} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == TilledTalesModItems.STONE_PLANTER.get()) {
-			PlacePlanterFromItemProcedure.execute(world, x, y, z, direction, entity, "stone");
+			AddPlanterBlockFromPlanterItemProcedure.execute(world, x, y, z, direction, entity, "stone");
 		} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == TilledTalesModItems.WOODEN_PLANTER.get()) {
-			PlacePlanterFromItemProcedure.execute(world, x, y, z, direction, entity, "wooden");
+			AddPlanterBlockFromPlanterItemProcedure.execute(world, x, y, z, direction, entity, "wooden");
 		}
 	}
 }

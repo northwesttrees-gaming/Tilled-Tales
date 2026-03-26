@@ -41,6 +41,7 @@ public class TilledTalesMod {
 		TilledTalesModBlockEntities.REGISTRY.register(modEventBus);
 		TilledTalesModItems.REGISTRY.register(modEventBus);
 		TilledTalesModTabs.REGISTRY.register(modEventBus);
+		TilledTalesModMobEffects.REGISTRY.register(modEventBus);
 		TilledTalesModMenus.REGISTRY.register(modEventBus);
 		TilledTalesModParticleTypes.REGISTRY.register(modEventBus);
 		// Start of user code block mod init

@@ -22,7 +22,7 @@ import net.minecraft.core.BlockPos;
 import net.minecraft.client.multiplayer.PlayerInfo;
 import net.minecraft.client.Minecraft;
 
-public class PlacePlanterFromItemProcedure {
+public class AddPlanterBlockFromPlanterItemProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Direction direction, Entity entity, String material) {
 		if (direction == null || entity == null || material == null)
 			return;
@@ -37,6 +37,8 @@ public class PlacePlanterFromItemProcedure {
 			bBlock = (blockStateWithDirection(TilledTalesModBlocks.GOLDEN_PLANTER_BLOCK.get().defaultBlockState(), ((entity.getDirection()).getOpposite())));
 		} else if ((bMaterial).equals("iron")) {
 			bBlock = (blockStateWithDirection(TilledTalesModBlocks.IRON_PLANTER_BLOCK.get().defaultBlockState(), ((entity.getDirection()).getOpposite())));
+		} else if ((bMaterial).equals("copper")) {
+			bBlock = (blockStateWithDirection(TilledTalesModBlocks.COPPER_PLANTER_BLOCK.get().defaultBlockState(), ((entity.getDirection()).getOpposite())));
 		} else if ((bMaterial).equals("stone")) {
 			bBlock = (blockStateWithDirection(TilledTalesModBlocks.STONE_PLANTER_BLOCK.get().defaultBlockState(), ((entity.getDirection()).getOpposite())));
 		} else if ((bMaterial).equals("wooden")) {
@@ -45,27 +47,27 @@ public class PlacePlanterFromItemProcedure {
 		bDirection = direction;
 		if (bDirection == Direction.UP && (world.getBlockState(BlockPos.containing(x, y + 1, z))).is(BlockTags.create(ResourceLocation.parse("minecraft:replaceable")))) {
 			world.setBlock(BlockPos.containing(x, y + 1, z), bBlock, 3);
-			PlayPlanterSoundWhenPlacedProcedure.execute(world, x, y, z, 0, 1, 0, bMaterial);
+			PlayPlanterSoundWhenPlanterPlacedProcedure.execute(world, x, y, z, 0, 1, 0, bMaterial);
 			itemAction = true;
 		} else if (bDirection == Direction.NORTH && (world.getBlockState(BlockPos.containing(x, y, z - 1))).is(BlockTags.create(ResourceLocation.parse("minecraft:replaceable")))) {
 			world.setBlock(BlockPos.containing(x, y, z - 1), bBlock, 3);
-			PlayPlanterSoundWhenPlacedProcedure.execute(world, x, y, z, 0, 0, -1, bMaterial);
+			PlayPlanterSoundWhenPlanterPlacedProcedure.execute(world, x, y, z, 0, 0, -1, bMaterial);
 			itemAction = true;
 		} else if (bDirection == Direction.EAST && (world.getBlockState(BlockPos.containing(x + 1, y, z))).is(BlockTags.create(ResourceLocation.parse("minecraft:replaceable")))) {
 			world.setBlock(BlockPos.containing(x + 1, y, z), bBlock, 3);
-			PlayPlanterSoundWhenPlacedProcedure.execute(world, x, y, z, 1, 0, 0, bMaterial);
+			PlayPlanterSoundWhenPlanterPlacedProcedure.execute(world, x, y, z, 1, 0, 0, bMaterial);
 			itemAction = true;
 		} else if (bDirection == Direction.SOUTH && (world.getBlockState(BlockPos.containing(x, y, z + 1))).is(BlockTags.create(ResourceLocation.parse("minecraft:replaceable")))) {
 			world.setBlock(BlockPos.containing(x, y, z + 1), bBlock, 3);
-			PlayPlanterSoundWhenPlacedProcedure.execute(world, x, y, z, 0, 0, 1, bMaterial);
+			PlayPlanterSoundWhenPlanterPlacedProcedure.execute(world, x, y, z, 0, 0, 1, bMaterial);
 			itemAction = true;
 		} else if (bDirection == Direction.WEST && (world.getBlockState(BlockPos.containing(x - 1, y, z))).is(BlockTags.create(ResourceLocation.parse("minecraft:replaceable")))) {
 			world.setBlock(BlockPos.containing(x - 1, y, z), bBlock, 3);
-			PlayPlanterSoundWhenPlacedProcedure.execute(world, x, y, z, -1, 0, 0, bMaterial);
+			PlayPlanterSoundWhenPlanterPlacedProcedure.execute(world, x, y, z, -1, 0, 0, bMaterial);
 			itemAction = true;
 		} else if (bDirection == Direction.DOWN && (world.getBlockState(BlockPos.containing(x, y - 1, z))).is(BlockTags.create(ResourceLocation.parse("minecraft:replaceable")))) {
 			world.setBlock(BlockPos.containing(x, y - 1, z), bBlock, 3);
-			PlayPlanterSoundWhenPlacedProcedure.execute(world, x, y, z, 0, -1, 0, bMaterial);
+			PlayPlanterSoundWhenPlanterPlacedProcedure.execute(world, x, y, z, 0, -1, 0, bMaterial);
 			itemAction = true;
 		}
 		if (itemAction) {

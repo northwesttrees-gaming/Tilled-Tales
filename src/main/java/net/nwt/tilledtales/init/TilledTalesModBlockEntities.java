@@ -60,6 +60,7 @@ public class TilledTalesModBlockEntities {
 	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<IronPlanterBlockBlockEntity>> IRON_PLANTER_BLOCK = register("iron_planter_block", TilledTalesModBlocks.IRON_PLANTER_BLOCK, IronPlanterBlockBlockEntity::new);
 	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<GoldenPlanterBlockBlockEntity>> GOLDEN_PLANTER_BLOCK = register("golden_planter_block", TilledTalesModBlocks.GOLDEN_PLANTER_BLOCK, GoldenPlanterBlockBlockEntity::new);
 	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<DiamondPlanterBlockBlockEntity>> DIAMOND_PLANTER_BLOCK = register("diamond_planter_block", TilledTalesModBlocks.DIAMOND_PLANTER_BLOCK, DiamondPlanterBlockBlockEntity::new);
+	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<CopperPlanterBlockBlockEntity>> COPPER_PLANTER_BLOCK = register("copper_planter_block", TilledTalesModBlocks.COPPER_PLANTER_BLOCK, CopperPlanterBlockBlockEntity::new);
 
 	// Start of user code block custom block entities
 	// End of user code block custom block entities
@@ -107,5 +108,6 @@ public class TilledTalesModBlockEntities {
 		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, IRON_PLANTER_BLOCK.get(), SidedInvWrapper::new);
 		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, GOLDEN_PLANTER_BLOCK.get(), SidedInvWrapper::new);
 		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, DIAMOND_PLANTER_BLOCK.get(), SidedInvWrapper::new);
+		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, COPPER_PLANTER_BLOCK.get(), SidedInvWrapper::new);
 	}
 }
